@@ -1993,7 +1993,7 @@ while True:
             matB = admin.matrix([b11,b21]).reshape(2,1)
             matC = admin.linalg.inv(matA).dot(matB)
             #Output----------
-            print('\nMatA:\n',matA,'\n\nMatB:\n',matB,'\n\nX, Y, Z:\n',matC,'\n\n')
+            print('\nMatA:\n',matA,'\n\nMatB:\n',matB,'\n\nX, Y:\n',matC,'\n\n')
         #Aa3-----------
         elif asd == '4,4':
             a11 = int(input('''Please enter a11 a12 a13 a14 to a44 of the 4x4 matrix respectively--
@@ -2023,7 +2023,7 @@ while True:
             matB = admin.matrix([b11,b21,b31,b41]).reshape(4,1)
             matC = admin.linalg.inv(matA).dot(matB)
             #Output----------
-            print('\nMatA:\n',matA,'\n\nMatB:\n',matB,'\n\nX, Y, Z:\n',matC,'\n\n')
+            print('\nMatA:\n',matA,'\n\nMatB:\n',matB,'\n\nW, X, Y, Z:\n',matC,'\n\n')
         #Aa4-----------
         else:
             print('''Dimension error--
